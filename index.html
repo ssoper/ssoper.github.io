@@ -53,7 +53,9 @@
     <script src='//www.google-analytics.com/urchin.js'></script>
     <script language='javascript'>
         _uacct = "UA-616637-1";
-        urchinTracker();
+        if (typeof(urchinTracker) === 'function') {
+            urchinTracker();            
+        }
     </script>
 </body>
 </html>

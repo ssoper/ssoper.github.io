@@ -2,6 +2,14 @@
  * Globals
  */
 
+/* Fonts */
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Links */
 a,
 a:focus,
@@ -123,6 +131,18 @@ body {
   font-weight: bold;
 }
 
+/* Custom */
+h1.cover-heading {
+    font-family: BebasNeueRegular, Arial;
+    font-size: 64px;
+}
+
+p.lead .btn {
+    color: white;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-right: 20px;
+}
 
 /*
  * Footer
@@ -164,6 +184,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 1000px;
   }
 }

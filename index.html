@@ -37,6 +37,7 @@
                   <li><a href='//twitter.com/ssoper'>Twitter</a></li>
                   <li><a href='//linkedin.com/in/seansoper'>LinkedIn</a></li>
                   <li><a href='//plus.google.com/u/0/+SeanSoper'>Google+</a></li>
+                  <li class='hidden' id='untappd'><a href='//untappd.com/user/ssoper'>Untappd</a></li>
               </ul>
             </div>
           </div>
@@ -50,6 +51,26 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
+
+    <!-- Cheers! 🍻 -->
+    <script language='javascript'>
+        var str = '';
+
+        $(document).keydown(function(evt) {
+            console.log(evt.keyCode)
+            if (evt.keyCode === 27) {
+                str = '';
+            }
+        });
+
+        $(document).keypress(function(evt) {
+            str += evt.keyCode;
+
+            if (str === '98101101114') {
+                $('#untappd').removeAttr('class');
+            }
+        });
+    </script>
 
     <!-- Google Analytics -->
     <script src='//www.google-analytics.com/urchin.js'></script>

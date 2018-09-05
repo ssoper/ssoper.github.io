@@ -6,8 +6,6 @@
     <meta name="ICBM" content="39.0840, 77.1528">
 
     <title>Sean Soper / Developer</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
-    <link href='css/cover.min.css' rel='stylesheet'>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,8 +33,9 @@
               <p>Connect</p>
               <ul class='list-inline'>
                   <li><a href='mailto:sean.soper@gmail.com'>Email</a></li>
-                  <li><a href='//twitter.com/ssoper'>Twitter</a></li>
+                  <li><a href='//mastodon.technology/@ssoper'>Mastodon</a></li>
                   <li><a href='//linkedin.com/in/seansoper'>LinkedIn</a></li>
+                  <li><a href='//twitter.com/ssoper'>Twitter</a></li>
                   <li><a href='//plus.google.com/u/0/+SeanSoper'>Google+</a></li>
                   <li class='hidden' id='untappd'><a href='//untappd.com/user/ssoper'>Untappd</a></li>
               </ul>
@@ -46,6 +45,26 @@
         </div>
       </div>
     </div>
+
+    <!-- Delay loading of CSS resource for Google PageSpeed optimizations -->
+    <noscript id="deferred-styles">
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+      <link rel='stylesheet' href='css/cover.min.css'>
+    </noscript>
+
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>

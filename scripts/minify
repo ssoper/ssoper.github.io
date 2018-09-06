@@ -2,3 +2,8 @@
 
 # Run from base dir of repo
 curl -X POST -s --data-urlencode 'input@./css/cover.css' https://cssminifier.com/raw > ./css/cover.min.css
+curl -X POST -s --data-urlencode 'input@./css/carlsbad.css' https://cssminifier.com/raw > ./css/carlsbad.min.css
+curl -X POST -s --data-urlencode 'input@./css/kaohsiung.css' https://cssminifier.com/raw > ./css/kaohsiung.min.css
+curl -X POST -s --data-urlencode 'input@./css/potomac.css' https://cssminifier.com/raw > ./css/potomac.min.css
+curl -X POST -s --data-urlencode 'input@./css/singapore.css' https://cssminifier.com/raw > ./css/singapore.min.css
+curl -X POST -s --data-urlencode 'input@./css/taipei.css' https://cssminifier.com/raw > ./css/taipei.min.css

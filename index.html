@@ -55,8 +55,21 @@
     <script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
+        var text = addStylesNode.textContent;
+
+        var places = [
+          'carlsbad',
+          'singapore',
+          'potomac',
+          'taipei',
+          'kaohsiung'
+        ];
+
+        var place = places[Math.floor(Math.random()*places.length)];
+
+        text += `<link rel='stylesheet' href='css/${place}.min.css'>`;
         var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
+        replacement.innerHTML = text;
         document.body.appendChild(replacement)
         addStylesNode.parentElement.removeChild(addStylesNode);
       };
@@ -77,7 +90,8 @@
         var str = '';
 
         $(document).keydown(function(evt) {
-            console.log(evt.keyCode)
+            // debug
+            // console.log(evt.keyCode)
             if (evt.keyCode === 27) {
                 str = '';
             }

@@ -50,34 +50,8 @@
     <noscript id='deferred-styles'>
       <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
       <link rel='stylesheet' href='css/cover.min.css'>
+      <link rel='stylesheet' href='css/theme.min.css'>
     </noscript>
-
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var text = addStylesNode.textContent;
-
-        var places = [
-          'carlsbad',
-          'singapore',
-          'potomac',
-          'taipei',
-          'kaohsiung'
-        ];
-
-        var place = places[Math.floor(Math.random()*places.length)];
-
-        text += `<link rel='stylesheet' href='css/${place}.min.css'>`;
-        var replacement = document.createElement("div");
-        replacement.innerHTML = text;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
@@ -85,26 +59,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
 
-    <!-- Cheers! 🍻 -->
-    <script language='javascript'>
-        var str = '';
-
-        $(document).keydown(function(evt) {
-            // debug
-            // console.log(evt.keyCode)
-            if (evt.keyCode === 27) {
-                str = '';
-            }
-        });
-
-        $(document).keypress(function(evt) {
-            str += evt.keyCode;
-
-            if (str === '98101101114') {
-                $('#untappd').removeAttr('class');
-            }
-        });
-    </script>
+    <script src='js/main.js'></script>
 
     <!-- Google Analytics -->
     <script>

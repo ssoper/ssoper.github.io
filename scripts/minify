@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-# Run from base dir of repo
-curl -X POST -s --data-urlencode 'input@./css/cover.css' https://cssminifier.com/raw > ./css/cover.min.css
-curl -X POST -s --data-urlencode 'input@./css/theme.css' https://cssminifier.com/raw > ./css/theme.min.css

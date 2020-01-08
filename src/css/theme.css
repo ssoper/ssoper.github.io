@@ -1,3 +1,24 @@
+body.christiana {
+  color: #fff;
+  background: url(../images/christiana.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body.christiana > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.christiana .btn-primary {
+  border-color: #72231c;
+}
+
+body.christiana .btn-primary:hover {
+  border-color: #475358;
+}
+
 body.carlsbad {
   color: #fff;
   background: url(../images/carlsbad.jpg) no-repeat center center fixed;
@@ -5,10 +26,6 @@ body.carlsbad {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-}
-
-body.carlsbad > .site-wrapper {
-  background-color: rgba(0, 0, 0, 0.55);
 }
 
 body.kaohsiung {
@@ -50,7 +67,7 @@ body.singapore > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.30);
 }
 
-body.singapore .btn-primary, body.singapore .btn-primary:hover {
+body.singapore .btn-primary {
   border-color: #9c97bd;
 }
 

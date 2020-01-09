@@ -1,1 +1,3 @@
-This is the public repo powering my site at [seansoper.com](https://seansoper.com).
+![Website](https://img.shields.io/website/https/seansoper.com)
+
+Powered by [Zebec](https://github.com/ssoper/Zebec), a static site generator written in Kotlin.

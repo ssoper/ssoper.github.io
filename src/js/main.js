@@ -32,7 +32,7 @@ var str = '';
 
 $(document).keydown(function(evt) {
     // debug
-    console.log(evt.keyCode)
+    // console.log(evt.keyCode)
     if (evt.keyCode === 27) {
         str = '';
     }

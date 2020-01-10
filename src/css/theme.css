@@ -1,3 +1,16 @@
+body.amsterdam {
+  color: #fff;
+  background: url(../images/amsterdam.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body.amsterdam > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 body.christiana {
   color: #fff;
   background: url(../images/christiana.jpg) no-repeat center center fixed;
@@ -26,6 +39,10 @@ body.carlsbad {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+body.carlsbad > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 body.kaohsiung {

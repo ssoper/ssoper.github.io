@@ -1,3 +1,24 @@
+body.bruges {
+  color: #fff;
+  background: url(../images/bruges.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body.bruges > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+body.bruges .btn-primary {
+  border-color: #d58d63;
+}
+
+body.bruges .btn-primary:hover {
+  border-color: #89827c;
+}
+
 body.amsterdam {
   color: #fff;
   background: url(../images/amsterdam.jpg) no-repeat center center fixed;

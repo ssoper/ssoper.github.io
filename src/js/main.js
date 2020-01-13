@@ -1,5 +1,6 @@
 var chooseTheme = function() {
   var places = [
+    'bruges',
     'amsterdam',
     'christiana',
     'carlsbad',

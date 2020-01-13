@@ -2,7 +2,7 @@ html {
     head {
         meta(mapOf("charset" to "utf-8"))
         meta(mapOf("http-equiv" to "X-UA-Compatible", "content" to "IE=edge"))
-        meta(mapOf("name" to "viewport", "content" to "width=device-width, initial-scale=1"))
+        meta(mapOf("name" to "viewport", "content" to "width=device-width, initial-scale=1, shrink-to-fit=no"))
         meta(mapOf("name" to "ICBM", "content" to "39.0840, 77.1528"))
         title("Sean Soper / Developer")
         link(LinkRelType.Shortcut, mapOf("type" to "image/x-icon", "href" to "/favicon.ico"))
@@ -26,7 +26,7 @@ html {
                     div(mapOf("class" to "mastfoot")) {
                         div(mapOf("class" to "inner")) {
                             p("Connect")
-                            ul(mapOf("class" to "list-inline")) {
+                            ul(mapOf("id" to "connect", "class" to "list-group list-group-horizontal")) {
                                 li {
                                     a("Email", "mailto:sean.soper@gmail.com")
                                 }
@@ -42,7 +42,7 @@ html {
                                 li {
                                     a("CocoaHeads DC", "//cocoaheadsdc.org")
                                 }
-                                li(mapOf("class" to "hidden", "id" to "untapped")) {
+                                li(mapOf("class" to "d-none", "id" to "untappd")) {
                                     a("Untappd", "//untappd.com/user/ssoper")
                                 }
                             }
@@ -51,17 +51,23 @@ html {
                 }
             }
         }
-        comment("jQuery (necessary for Bootstrap's JavaScript plugins)")
-        script("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+        comment("jQuery")
+        script("https://code.jquery.com/jquery-3.4.1.slim.min.js", mapOf(
+          "integrity" to "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n",
+          "crossorigin" to "anonymous"))
+        comment("Popper")
+        script("https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", mapOf(
+          "integrity" to "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo",
+          "crossorigin" to "anonymous"))
         comment("Bootstrap")
-        script("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", mapOf(
-            "integrity" to "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS",
+        script("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", mapOf(
+            "integrity" to "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6",
             "crossorigin" to "anonymous"))
         comment("Delay loading of some assets for Google PageSpeed optimizations")
         noscript(mapOf("id" to "deferred-styles")) {
             link(LinkRelType.Stylesheet, mapOf(
-                "href" to "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
-                "integrity" to "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7",
+                "href" to "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css",
+                "integrity" to "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh",
                 "crossorigin" to "anonymous"))
             link(LinkRelType.Stylesheet, mapOf("href" to "css/cover.min.css"))
             link(LinkRelType.Stylesheet, mapOf("href" to "css/theme.min.css"))

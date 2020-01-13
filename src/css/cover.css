@@ -60,7 +60,6 @@ body {
   padding: 30px;
 }
 
-
 /*
  * Header
  */
@@ -106,7 +105,6 @@ body {
   }
 }
 
-
 /*
  * Cover
  */
@@ -142,6 +140,13 @@ p.lead .btn {
   color: rgba(255,255,255,.5);
 }
 
+ul#connect {
+  list-style-type: none;
+}
+
+ul#connect > li {
+  padding-right: 15px;
+}
 
 /*
  * Affix and center

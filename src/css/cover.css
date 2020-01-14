@@ -181,3 +181,9 @@ ul#connect > li {
     width: 1000px;
   }
 }
+
+@media (max-width: 480px) {
+  div.inner.cover {
+    margin-right: 45px;
+  }
+}

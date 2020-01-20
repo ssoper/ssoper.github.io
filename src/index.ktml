@@ -73,7 +73,9 @@ html {
             link(LinkRelType.Stylesheet, mapOf("href" to "css/cover.min.css"))
             link(LinkRelType.Stylesheet, mapOf("href" to "css/theme.min.css"))
         }
-        script("js/main.min.js")
+        script("js/load_deferred_styles.min.js")
+        script("js/load_theme.min.js")
+        script("js/load_easteregg.min.js")
         comment("Google Analytics")
         gaTag("UA-616637-1")
     }

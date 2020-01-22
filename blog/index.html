@@ -60,6 +60,12 @@
           <p>Whatever the programming advancements you’re learning here, most of them are applicable for other platforms where Kotlin is used for development.</p>
           <hr />
           <p>This can be done with a special declaration called extensions. For example, we can write new functionalities to a class in the third-party library that can’t be modified and use them as the actual functions in the class. These functions are called extension functions.</p>
+          <pre><code>
+import hello
+println("hello world")
+</pre></code>
+          <h2>String extensions</h2>
+          <p>Until now, we’ve looked at view extensions. Next, let’s concentrate on some validations we can do using extensions.</p>
         </div>
         <!-- Sidebar Widgets Column -->
         <div class='col-md-4'>
@@ -125,12 +131,16 @@
     <script integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <!-- Bootstrap -->
     <script integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <!-- highlight.js -->
+    <script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js'></script>
     <!-- Delay loading of some assets for Google PageSpeed optimizations -->
     <noscript id='deferred-styles'>
       <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous' rel='stylesheet' />
       <link href='/css/blog.min.css' rel='stylesheet' />
+      <link href='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/default.min.css' rel='stylesheet' />
     </noscript>
     <script src='/js/load_deferred_styles.min.js'></script>
+    <script src='/js/load_highlight.min.js'></script>
     <!-- Google Analytics -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -124,7 +124,12 @@ div.content hr:after {
   background: white;
 }
 
+pre {
+  margin-bottom: 30px;
+}
+
 code {
+  margin-top: -20px;
   font-family: JetBrainsMono, Courier;
 }
 

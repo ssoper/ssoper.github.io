@@ -65,6 +65,14 @@ html {
           p("Whatever the programming advancements you’re learning here, most of them are applicable for other platforms where Kotlin is used for development.")
           hr()
           p("This can be done with a special declaration called extensions. For example, we can write new functionalities to a class in the third-party library that can’t be modified and use them as the actual functions in the class. These functions are called extension functions.")
+          raw("""
+            <pre><code>
+            import hello
+            println("hello world")
+            </pre></code>
+          """.trimIndent())
+          h2("String extensions")
+          p("Until now, we’ve looked at view extensions. Next, let’s concentrate on some validations we can do using extensions.")
         }
         comment("Sidebar Widgets Column")
         div(mapOf("class" to "col-md-4")) {
@@ -136,6 +144,8 @@ html {
     script("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", mapOf(
         "integrity" to "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6",
         "crossorigin" to "anonymous"))
+    comment("highlight.js")
+    script("//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js")
     comment("Delay loading of some assets for Google PageSpeed optimizations")
     noscript(mapOf("id" to "deferred-styles")) {
         link(LinkRelType.Stylesheet, mapOf(
@@ -143,8 +153,10 @@ html {
             "integrity" to "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh",
             "crossorigin" to "anonymous"))
         link(LinkRelType.Stylesheet, mapOf("href" to "/css/blog.min.css"))
+        link(LinkRelType.Stylesheet, mapOf("href" to "//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/default.min.css"))
     }
     script("/js/load_deferred_styles.min.js")
+    script("/js/load_highlight.min.js")
     comment("Google Analytics")
     gaTag("UA-616637-1")
   }

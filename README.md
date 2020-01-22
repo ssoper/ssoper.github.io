@@ -3,5 +3,6 @@
 [![Chrome](https://img.shields.io/badge/chrome-renders-blue)](https://www.browserling.com/browse/win/10/chrome/56/https%3A%2F%2Fseansoper.com)
 [![Edge](https://img.shields.io/badge/edge-renders-blue)](https://www.browserling.com/browse/win/10/edge/38/https%3A%2F%2Fseansoper.com)
 [![Firefox](https://img.shields.io/badge/firefox-renders-blue)](https://www.browserling.com/browse/win/10/firefox/51/https%3A%2F%2Fseansoper.com)
+![Dark Mode](https://img.shields.io/badge/dark%20mode-supported-blueviolet)]
 
 Powered by [Zebec](https://github.com/ssoper/Zebec), a static site generator written in Kotlin.

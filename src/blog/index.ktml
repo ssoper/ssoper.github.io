@@ -17,7 +17,7 @@ html {
     comment("Navigation")
     nav(mapOf("class" to "navbar navbar-expand-lg navbar-dark bg-dark fixed-top")) {
       div(mapOf("class" to "container")) {
-        a("SeanSoper", "/", mapOf("class" to "navbar-brand"))
+        a("🍱 👨🏻‍💻 🛫", "/blog", mapOf("class" to "navbar-brand", "title" to "eat. code. travel."))
         button(mapOf("class" to "navbar-toggler",
                      "type" to "button",
                      "data-toggle" to "collapse",
@@ -33,7 +33,7 @@ html {
               a("Home", "/", mapOf("class" to "nav-link"))
             }
             li(mapOf("class" to "nav-item")) {
-              a("About", "/",mapOf("class" to "nav-link"))
+              a("About", "/about",mapOf("class" to "nav-link"))
             }
           }
         }

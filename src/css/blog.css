@@ -1,7 +1,7 @@
 /* Inspired by https://startbootstrap.com/template-overviews/blog-post */
 
 body {
-  padding-top: 80px;
+  padding-top: 45px;
 }
 
 nav.bg-dark {
@@ -24,9 +24,9 @@ nav.bg-dark {
 
 nav a.navbar-brand {
   font-family: BebasNeueRegular, Arial;
-  font-size: 64px;
+  font-size: 44px;
   margin-bottom: -23px;
-  margin-top: -10px;
+  margin-top: -15px;
   padding: 0;
 }
 
@@ -187,11 +187,20 @@ code {
 
 /* Desktop */
 @media (min-width: 992px) {
+  body {
+    padding-top: 80px;
+  }
+
   div#navbarResponsive {
     margin-bottom: -30px;
   }
 
   a.nav-link {
     padding: 0;
+  }
+
+  nav a.navbar-brand {
+    font-size: 64px;
+    margin-top: -10px;
   }
 }

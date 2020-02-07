@@ -1,9 +1,8 @@
 [//]: # (zauthor: Sean Soper)
 [//]: # (ztitle: Advanced Android Programming With Kotlin)
 [//]: # (zsubtitle: Kotlin-exclusive features you should be using)
-[//]: # (zimage: http://placekitten.com/900/300)
+[//]: # (zimage: https://unsplash.com/photos/ZBWtD2UmMzA)
 [//]: # (ztags: android, programming, kotlin)
-[//]: # (ztemplate: blog)
 
 Unlike Java, where we need to write everything, a Kotlin compiler can understand the code and write the boilerplate code under the hood — for example, it can infer types in variable declarations. This increases productivity and saves time.
 

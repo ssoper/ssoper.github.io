@@ -1,7 +1,7 @@
 /* Inspired by https://startbootstrap.com/template-overviews/blog-post */
 
 body {
-  padding-top: 45px;
+  padding-top: 50px;
 }
 
 nav.bg-dark {
@@ -131,6 +131,11 @@ code {
   font-family: JetBrainsMono, Courier;
 }
 
+/* Blog index */
+div.content p.card-text {
+  font-size: 16px;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
@@ -182,6 +187,15 @@ code {
 
   div.card {
     border: 1px solid #7c8e90;
+  }
+
+  div.content p.card-text {
+    color: #e0e0e0;
+    font-size: 16px;
+  }
+
+  div.content h5.card-title {
+    color: white;
   }
 }
 

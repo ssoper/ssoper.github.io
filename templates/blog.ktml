@@ -52,52 +52,11 @@ html {
             h5("Search", mapOf("class" to "card-header"))
             div(mapOf("class" to "card-body")) {
               div(mapOf("class" to "input-group")) {
-                input("text", mapOf("class" to "form-control", "placeholder" to "Search for…"))
+                input("text", mapOf("class" to "form-control", "placeholder" to "Search for…", "id" to "search-query"))
                 span(mapOf("class" to "input-group-btn")) {
-                  button("Go!", mapOf("class" to "btn btn-secondary", "type" to "button"))
+                  button("Go!", mapOf("class" to "btn btn-secondary", "type" to "button", "id" to "search-button"))
                 }
               }
-            }
-          }
-          comment("Categories Widget")
-          div(mapOf("class" to "card my-4")) {
-            h5("Categories", mapOf("class" to "card-header"))
-            div(mapOf("class" to "card-body")) {
-              div(mapOf("class" to "row")) {
-                div(mapOf("class" to "col-lg-6")) {
-                  ul(mapOf("class" to "list-unstyled mb-0")) {
-                    li {
-                      a("Web Design", "#")
-                    }
-                    li {
-                      a("HTML", "#")
-                    }
-                    li {
-                      a("Freebies", "#")
-                    }
-                  }
-                }
-                div(mapOf("class" to "col-lg-6")) {
-                  ul(mapOf("class" to "list-unstyled mb-0")) {
-                    li {
-                      a("JavaScript", "#")
-                    }
-                    li {
-                      a("CSS", "#")
-                    }
-                    li {
-                      a("Tutorials", "#")
-                    }
-                  }
-                }
-              }
-            }
-          }
-          comment("Side Widget")
-          div(mapOf("class" to "card my-4")) {
-            h5("Side Widget", mapOf("class" to "card-header"))
-            div(mapOf("class" to "card-body")) {
-              p("You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!")
             }
           }
         }
@@ -128,6 +87,7 @@ html {
     }
     script("/js/load_deferred_styles.min.js")
     script("/js/load_highlight.min.js")
+    script("/js/load_search.min.js")
     comment("Google Analytics")
     gaTag("UA-616637-1")
   }

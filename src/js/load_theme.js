@@ -1,4 +1,4 @@
-var chooseTheme = function() {
+$(function() {
   var places = [
     'bruges',
     'amsterdam',
@@ -12,8 +12,4 @@ var chooseTheme = function() {
 
   var place = places[Math.floor(Math.random()*places.length)];
   document.body.classList.add(place);
-};
-
-$(function() {
-  chooseTheme();
 });

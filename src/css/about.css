@@ -26,7 +26,7 @@ div p.code-text {
   padding-left: 10px;
   display: inline;
   position: relative;
-  top: 7px;
+  top: 8px;
 }
 
 div.travel-icon {
@@ -51,4 +51,8 @@ div.content p:first-of-type {
 
 div.content p {
   margin-bottom: 0px;
+}
+
+div.col-lg-8.content {
+  padding-bottom: 50px;
 }

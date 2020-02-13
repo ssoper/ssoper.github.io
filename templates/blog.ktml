@@ -29,7 +29,7 @@ html {
         }
         div(mapOf("class" to "collapse navbar-collapse", "id" to "navbarResponsive")) {
           ul(mapOf("class" to "navbar-nav ml-auto")) {
-            li(mapOf("class" to "nav-item active")) {
+            li(mapOf("class" to "nav-item")) {
               a("Home", "/", mapOf("class" to "nav-link"))
             }
             li(mapOf("class" to "nav-item")) {

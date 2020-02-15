@@ -31,7 +31,7 @@ div p.code-text {
 
 div.travel-icon {
   font-size: 90px;
-  display: inline;
+  margin-top: -20px;
 }
 
 div p.travel-text {
@@ -46,7 +46,7 @@ div p.travel-text {
 }
 
 div.content p:first-of-type {
-  margin-top: 0px !important;
+  margin-top: -17px !important;
 }
 
 div.content p {

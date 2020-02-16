@@ -5,7 +5,7 @@ html {
       meta(mapOf("http-equiv" to "X-UA-Compatible", "content" to "IE=edge"))
       meta(mapOf("name" to "viewport", "content" to "width=device-width, initial-scale=1, shrink-to-fit=no"))
       meta(mapOf("name" to "ICBM", "content" to "39.0840, 77.1528"))
-      title("Sean Soper / Developer")
+      title("eat. code. travel.")
       link(LinkRelType.Shortcut, mapOf("type" to "image/x-icon", "href" to "/favicon.ico"))
       comment("HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries")
       ifComment("lt IE 9") {
@@ -44,7 +44,7 @@ html {
       div(mapOf("class" to "row")) {
         div(mapOf("class" to "col-lg-8 content")) {
           raw("<div class='eat-icon'>🍱<p class='eat-text'>eat</p></div>")
-          p("Whether it’s cooking it or consuming it, I love food. If I happen to get any free time you’re likely to find me in the kitchen where I’m either trying to faithfully recreate a dish from an episode of _Parts Unknown_ or attempting to make a vegetarian analog of a popular meat dish. Aside from Anthony Bourdain and his body of work (<em><a href='https://www.goodreads.com/book/show/33313.Kitchen_Confidential'>Kitchen Confidential</a></em>, <em><a href='https://www.pbs.org/food/shows/the-mind-of-a-chef/'>Mind of a Chef</a></em>, etc.) I also cite Marcus Sameulsson’s <em><a href='https://www.pbs.org/food/shows/the-mind-of-a-chef/'>No Passport Required</a></em> and <a href='https://twitter.com/ericripert'>Eric Ripert</a> as big influencers for me in this space.")
+          p("Whether it’s cooking it or consuming it, I love food. If I happen to get any free time you’re likely to find me in the kitchen where I’m either trying to faithfully recreate a dish from an episode of <em>Parts Unknown</em> or attempting to make a vegetarian analog of a popular meat dish. Aside from Anthony Bourdain and his body of work (<em><a href='https://www.goodreads.com/book/show/33313.Kitchen_Confidential'>Kitchen Confidential</a></em>, <em><a href='https://www.pbs.org/food/shows/the-mind-of-a-chef/'>Mind of a Chef</a></em>, etc.) I also cite Marcus Sameulsson’s <em><a href='https://www.pbs.org/food/shows/the-mind-of-a-chef/'>No Passport Required</a></em> and <a href='https://twitter.com/ericripert'>Eric Ripert</a> as big influencers for me in this space.")
           raw("<div class='code-icon'>👨🏻‍💻<p class='code-text'>code</p></div>")
           p("Between QBasic, my first self-taught programming language, and Kotlin, my current obsession, there have been about a dozen languages. From procedural Pascal to functional Swift, my career has closely tracked with the latest trends in compilers, challenging me to keep learning or else fall behind. When possible, I’ve tried to carve out time to explore other areas of this amazing field we call computer science. Machine Learning, data science and signal processing are just a few of the concepts I’d like to try and tackle in this blog.")
           raw("<div class='travel-icon'>🛫<p class='travel-text'>travel</p></div>")

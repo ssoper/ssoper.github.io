@@ -8,7 +8,8 @@ $(function() {
     'potomac',
     'taipei',
     'kaohsiung',
-    'sunflower'
+    'sunflower',
+    'natural_bridge'
   ];
 
   // Don’t forget to add to theme.css

@@ -5,7 +5,7 @@ html {
       meta(mapOf("http-equiv" to "X-UA-Compatible", "content" to "IE=edge"))
       meta(mapOf("name" to "viewport", "content" to "width=device-width, initial-scale=1, shrink-to-fit=no"))
       meta(mapOf("name" to "ICBM", "content" to "39.0840, 77.1528"))
-      title("eat. code. travel.")
+      title("eat. code. stocks.")
       link(LinkRelType.Shortcut, mapOf("type" to "image/x-icon", "href" to "/favicon.ico"))
       comment("HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries")
       ifComment("lt IE 9") {
@@ -17,7 +17,7 @@ html {
     comment("Navigation")
     nav(mapOf("class" to "navbar navbar-expand-lg navbar-dark bg-dark fixed-top")) {
       div(mapOf("class" to "container")) {
-        a("🍱 👨🏻‍💻 🛫", "/blog", mapOf("class" to "navbar-brand", "title" to "eat. code. travel."))
+        a("🍱 👨🏻‍💻 🏦", "/blog", mapOf("class" to "navbar-brand", "title" to "eat. code. stocks."))
         button(mapOf("class" to "navbar-toggler",
                      "type" to "button",
                      "data-toggle" to "collapse",
@@ -33,7 +33,7 @@ html {
               a("Home", "/", mapOf("class" to "nav-link"))
             }
             li(mapOf("class" to "nav-item")) {
-              a("About", "/about",mapOf("class" to "nav-link"))
+              a("Blog", "/blog",mapOf("class" to "nav-link"))
             }
           }
         }

@@ -35,13 +35,13 @@ html {
                                     a("Mastodon", "//mastodon.technology/@ssoper")
                                 }
                                 li {
+                                    a("Blog", "/blog")
+                                }
+                                li {
                                     a("LinkedIn", "//linkedin.com/in/seansoper")
                                 }
                                 li {
                                     a("Twitter", "//twitter.com/ssoper")
-                                }
-                                li {
-                                    a("CocoaHeads DC", "//cocoaheadsdc.org")
                                 }
                                 li(mapOf("class" to "d-none", "id" to "untappd")) {
                                     a("Untappd", "//untappd.com/user/ssoper")

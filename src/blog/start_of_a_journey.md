@@ -16,7 +16,7 @@ The conference itself was amazing with a fantastic opening keynote that made cle
 
 Not wanting to sound like a total n00b I took an online [Udacity course](https://www.udacity.com/course/kotlin-bootcamp-for-programmers--ud9011) the weekend before the conference. After returning from Copenhagen, I decided that I wanted to do more than just poke around. I wanted to _build_ something that others could potentially use. For the past few years I’ve been tossing around the idea of finally upgrading my website to something a bit more dynamic. But I’m cheap and don’t want to pay for hosting so that limits me to static HTML files.
 
-Now I know there are a host, pun intended, of [libraries](https://github.com/11ty/eleventy) out there for generating static HTML files from various sources. But there were certain customization options I was after plus the integration could be just as painful depending on what I wanted to add in the future. So I decided to build my own in Kotlin with the intention of not just learning the language but blogging about the development processitself.
+Now I know there are a host, pun intended, of [libraries](https://github.com/11ty/eleventy) out there for generating static HTML files from various sources. But there were certain customization options I was after plus the integration could be just as painful depending on what I wanted to add in the future. So I decided to build my own in Kotlin with the intention of not just learning the language but blogging about the development process itself.
 
 ## Zebec
 

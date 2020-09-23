@@ -40,6 +40,7 @@ Return to Postman and duplicate the first request we made. Change the URL to `ht
 
 * Access Token: The returned value of `oauth_token` from the previous request. Ensure the value is URI decoded.
 * Token Secret: The returned value of `oauth_token_secret` from the previous request. Ensure the value is URI decoded.
+* Callback URL: `oob`, I’ve no idea why but E\*TRADE says it’s required.
 * Verifer: The six-digit code from the browser session.
 
 After hitting Send on this request you will get yet _another_ set of values for `oauth_token` and `oauth_token_secret` which we will now use in all requests going forward.

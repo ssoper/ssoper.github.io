@@ -9,7 +9,9 @@ $(function() {
     'taipei',
     'kaohsiung',
     'sunflower',
-    'natural_bridge'
+    'natural_bridge',
+    'dulles',
+    'corolla'
   ];
 
   // Don’t forget to add to theme.css

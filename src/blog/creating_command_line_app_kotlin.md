@@ -14,7 +14,7 @@ Let’s start with opening up IntelliJ and creating a new project. Click on `Fil
 
 <img src="/images/blog/creating_command_line_app_kotlin/new_project.png" alt="New Project Screenshot" class="img-fluid rounded embedded">
 
-For the type of project select `Gradle` with `Kotlin/JVM` as the type of project. Ensure a Java SDK is present in the `Project SDK` field which should be pre-filled with a sensible default.
+For the type of project select `Gradle` ➡ `Kotlin/JVM`. Ensure a Java SDK is present in the `Project SDK` field which should be pre-filled with a sensible default.
 
 <img src="/images/blog/creating_command_line_app_kotlin/project_type.png" alt="Project Type Screenshot" class="img-fluid rounded embedded">
 
@@ -82,7 +82,7 @@ Once these changes are made the Gradle script should correctly build and start c
 
 ## Entrypoint
 
-We’ll need to create a main entrypoint function where the app “starts”. There are two approaches to doing this and differ really only in style than anything else. The first involves creating a `fun main` at the root level of a file while the second requires creating an `object` with a static main method inside of it. Personally I’m a fan of the 2nd method as I feel it allows for better organization. I also like to put this in a file named `Core.kt`.
+We’ll need to create a main entrypoint function where the app “starts”. There are two approaches to doing this and differ really only in style than anything else. The first involves creating a `fun main` at the root level of a file while the second requires creating an `object` with a static main method inside of it. Personally I’m a fan of the 2nd method as I feel it allows for better organization. I also like to put this in a file named `Core.kt` which should be added to the `src/main/kotlin` directory as `New` ➡ `Kotlin File/Class`.
 
     package com.seansoper.batil
     

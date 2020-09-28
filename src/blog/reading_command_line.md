@@ -72,7 +72,7 @@ In our case a typical value would be `-config=/path/to/config` along with a regu
 
 In this example the string values are being converted and returned as an `Int` while using the exact same code under the hood to break up the initial command-line input. That is the power of generics, HOFs and lambdas all working together to break down complexity into bite-sized reusable chunks.
 
-## Summary
+## Integration
 
 Using this new parser functionality is pretty simple thanks to our componentized approach. Within `Core.kt` we need only update the `main` function to look like this.
 
@@ -95,5 +95,33 @@ Using this new parser functionality is pretty simple thanks to our componentized
         println("verbose set to ${parsed.verbose}")
         println("config path set to ${parsed.pathToConfigFile}")
     }
+
+Rebuilding the JAR file and running it should now produce useful output. Here it is showing the help dialog.
+
+    ssoper@rocinante Batil % java -jar out/artifacts/Batil_main_jar/Batil.main.jar -help
+    Arguments
+    
+        -help              Show documentation
+        -verbose           Show debugging output
+        -config=path       Path to configuration file, default is ./batil.config
+
+Showing an error.
+
+    ssoper@rocinante Batil % java -jar out/artifacts/Batil_main_jar/Batil.main.jar -verbose
+    ❌ Configuration file not found
+    Arguments
+    
+        -help              Show documentation
+        -verbose           Show debugging output
+        -config=path       Path to configuration file, default is ./batil.config
+
+And finally showing a successful run.
+
+    ssoper@rocinante Batil % touch batil.config
+    ssoper@rocinante Batil % java -jar out/artifacts/Batil_main_jar/Batil.main.jar -verbose
+    verbose set to true
+    config path set to /Users/ssoper/workspace/Batil/batil.config
+
+## Summary
 
 Of course, neither you or I are the first ones to stumble upon this problem which is why libraries such as [Clikt](https://ajalt.github.io/clikt/) are available to use with your command-line applications should you not feel like building your own solution. Even if you do go with a pre-packaged command-line parser, there is plenty of opportunity to use the full range of functional tools provided by Kotlin to help reduce the complexity in your code.

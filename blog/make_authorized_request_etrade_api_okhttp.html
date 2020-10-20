@@ -82,7 +82,7 @@ val client = OkHttpClient.Builder()
 val request = Request.Builder()
     .url(&quot;https://apisb.etrade.com/oauth/request_token&quot;)
     .build()
-    
+     
 val response = client.newCall(request).execute()
 </code></pre><h2>Tokens</h2><p>With our consumer keys stored in our <a href="/blog/reading_yaml_configuration_file_kotlin.html">YAML file</a> for easy retrieval, we can pass them along to our HTTP client and get back the OAuth tokens required for the next step in our journey.</p><pre><code>
 val client = Etrade(configuration, parsed.production)

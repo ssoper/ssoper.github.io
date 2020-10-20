@@ -57,7 +57,7 @@ With the `Interceptor` doing the heavy lifting of signing our requests, we can f
     val request = Request.Builder()
         .url("https://apisb.etrade.com/oauth/request_token")
         .build()
-        
+         
     val response = client.newCall(request).execute()
 
 ## Tokens

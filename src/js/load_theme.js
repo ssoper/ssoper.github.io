@@ -28,5 +28,5 @@
 
   // Don’t forget to add to theme.css
   let place = places[Math.floor(Math.random()*places.length)];
-  document.body.classList.add(place);
+  document.body.classList.add('webp', 'singapore');
 })(document);

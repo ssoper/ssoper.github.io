@@ -1,10 +1,20 @@
-body.bruges {
+body {
   color: #fff;
-  background: url(../images/bruges.jpg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+body.bruges.jpg {
+  background-image: url(../images/bruges.jpg)
+}
+
+body.bruges.webp {
+  background-image: url(../images/bruges.webp)
 }
 
 body.bruges > .site-wrapper {
@@ -19,26 +29,24 @@ body.bruges .btn-primary:hover {
   border-color: #89827c;
 }
 
-body.amsterdam {
-  color: #fff;
-  background: url(../images/amsterdam.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.amsterdam.jpg {
+  background-image: url(../images/amsterdam.jpg)
+}
+
+body.amsterdam.webp {
+  background-image: url(../images/amsterdam.webp)
 }
 
 body.amsterdam > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-body.christiana {
-  color: #fff;
-  background: url(../images/christiana.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.christiana.jpg {
+  background-image: url(../images/christiana.jpg)
+}
+
+body.christiana.webp {
+  background-image: url(../images/christiana.webp)
 }
 
 body.christiana > .site-wrapper {
@@ -53,52 +61,48 @@ body.christiana .btn-primary:hover {
   border-color: #475358;
 }
 
-body.carlsbad {
-  color: #fff;
-  background: url(../images/carlsbad.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.carlsbad.jpg {
+  background-image: url(../images/carlsbad.jpg);
+}
+
+body.carlsbad.webp {
+  background-image: url(../images/carlsbad.webp);
 }
 
 body.carlsbad > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-body.kaohsiung {
-  color: #fff;
-  background: url(../images/kaohsiung.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.kaohsiung.jpg {
+  background-image: url(../images/kaohsiung.jpg)
+}
+
+body.kaohsiung.webp {
+  background-image: url(../images/kaohsiung.webp)
 }
 
 body.kaohsiung > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-body.potomac {
-  color: #fff;
-  background: url(../images/potomac.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.potomac.jpg {
+  background-image: url(../images/potomac.jpg)
+}
+
+body.potomac.webp {
+  background-image: url(../images/potomac.webp)
 }
 
 body.potomac > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-body.singapore {
-  color: #fff;
-  background: url(../images/singapore.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.singapore.jpg {
+  background-image: url(../images/singapore.jpg)
+}
+
+body.singapore.webp {
+  background-image: url(../images/singapore.webp)
 }
 
 body.singapore > .site-wrapper {
@@ -113,26 +117,24 @@ body.singapore .btn-primary:hover {
   border-color: #ae2525;
 }
 
-body.taipei {
-  color: #fff;
-  background: url(../images/taipei.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.taipei.jpg {
+  background-image: url(../images/taipei.jpg)
+}
+
+body.taipei.webp {
+  background-image: url(../images/taipei.webp)
 }
 
 body.taipei > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-body.sunflower {
-  color: #fff;
-  background: url(../images/sunflower.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.sunflower.jpg {
+  background-image: url(../images/sunflower.jpg)
+}
+
+body.sunflower.webp {
+  background-image: url(../images/sunflower.webp)
 }
 
 body.sunflower .btn-primary {
@@ -147,39 +149,36 @@ body.sunflower > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-body.natural_bridge {
-  color: #fff;
-  background: url(../images/natural_bridge.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.natural_bridge.jpg {
+  background-image: url(../images/natural_bridge.jpg)
+}
+
+body.natural_bridge.webp {
+  background-image: url(../images/natural_bridge.webp)
 }
 
 body.natural_bridge > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-body.dulles {
-  color: #fff;
-  background: url(../images/dulles.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.dulles.jpg {
+  background-image: url(../images/dulles.jpg)
+}
+
+body.dulles.webp {
+  background-image: url(../images/dulles.webp)
 }
 
 body.dulles > .site-wrapper {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-body.corolla {
-  color: #fff;
-  background: url(../images/corolla.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body.corolla.jpg {
+  background-image: url(../images/corolla.jpg)
+}
+
+body.corolla.webp {
+  background-image: url(../images/corolla.webp)
 }
 
 body.corolla > .site-wrapper {

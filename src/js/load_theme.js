@@ -1,5 +1,5 @@
 $(function() {
-  var places = [
+  let places = [
     'bruges',
     'amsterdam',
     'christiana',

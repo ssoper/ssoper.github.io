@@ -73,10 +73,17 @@ div.content div.author ul li:last-child {
   color: rgb(0, 0, 0, 0.54);
 }
 
-div.content p, div.content blockquote, div.content ul li {
+div.content p,
+div.content blockquote,
+div.content ol li,
+div.content ul li {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 19px;
   color: rgb(0, 0, 0, 0.84);
+}
+
+div.content p,
+div.content blockquote {
   margin-bottom: 30px;
 }
 
@@ -133,6 +140,11 @@ code {
   color: #118F55;
 }
 
+div.content ol,
+div.content ul {
+  margin-top: -15px;
+}
+
 /* Blog index */
 div.content p.card-text {
   font-size: 16px;
@@ -153,6 +165,7 @@ div.content p.card-text {
   div.content p,
   div.content blockquote,
   div.card-body p,
+  div.content ol li,
   div.content ul li,
   div.content div.author ul li,
   div.content div.author ul li:last-child {

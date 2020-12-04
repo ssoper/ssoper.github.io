@@ -207,23 +207,26 @@ With our functions defined, we can then use the following flow to return the val
     
     return chrome.use { browser ->
         browser.target("about:blank").use { target ->
+            // Setup
             await { target.Page.enable() }
+            
+            // Login to account
             await { navigateTo(url, target) }
             val authNode = await { getRootNode(target) }
-    
             await { fillValue(authNode, "input[name='USER']", username, target) }
             await { fillValue(authNode, "input[name='PASSWORD']", password, target) }
             await { saveScreenshot(Screenshot.AUTHORIZATION, target) }
-    
             await { clickElement(authNode, "#logon_button", target) }
+    
+            // Accept ToS
             Thread.sleep(delay)
             await { saveScreenshot(Screenshot.ACCEPT_TOS, target) }
-    
             val tosNode = await { getRootNode(target) }
             await { clickElement(tosNode, "input[value='Accept']", target) }
+      
+            // Retrieve Verifier code
             Thread.sleep(delay)
             await { saveScreenshot(Screenshot.VERIFIER_CODE, target) }
-    
             val verifierNode = await { getRootNode(target) }
             await { getValue(verifierNode, "div > input[type='text']", target) }
         }
@@ -231,6 +234,6 @@ With our functions defined, we can then use the following flow to return the val
 
 ## Summary
 
-After an initial false start with jsoup we finally found some traction with Chrome DevTools. I don’t mean to knock jsoup as it’s a fantastic library on its own if you’re just looking to interact with a single web page. However, for the more complex interactions we found that the Chrome DevTools Protocol was the best solution.
+After an initial false start with jsoup we finally found some traction with Chrome DevTools. I don’t mean to knock jsoup as it’s a fantastic library on its own if you’re just looking to interact with a single web page. However, for the more complex interactions I found that the Chrome DevTools Protocol was the best solution.
 
 A summary of these commits can be found [here](https://github.com/ssoper/Batil/compare/4ce8af7..6fa02e2).

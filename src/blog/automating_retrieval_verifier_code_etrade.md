@@ -10,7 +10,7 @@ Automating browser actions is nothing new and as a developer I saw an opportunit
 
 ## First Attempt
 
-My first attempt at automatically retrieving a Verifier code was with [jsoup](https://jsoup.org/). As an HTML parser, jsoup is one of the more popular options in the Java world. It provides CSS3-like selector for parsing and manipulating the DOM just like you would find in any major browser. Yet my attempts at filling in the form and clicking submit kept leading me back to the E\*TRADE login page instead of the next step of verification. Clearly there was something an actual browser was doing that I was not. Given that a browser does so much like store cookies and listen for DOM events, it was obvious that jsoup’s simple DOM manipulation was not going to cut it.
+My first attempt at automatically retrieving a `Verifier` code was with [jsoup](https://jsoup.org/). As an HTML parser, jsoup is one of the more popular options in the Java world. It provides CSS3-like selector behavior for parsing and manipulating the DOM just like you would find in any major browser. Yet my attempts at filling in the form and clicking submit kept leading me back to the E\*TRADE login page instead of the next step of verification. Clearly there was something an actual browser was doing that jsoup was not. Given that a browser does so much like store cookies and listen for DOM events, it was obvious that simple DOM manipulation was not going to cut it.
 
 ## Chrome
 

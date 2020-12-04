@@ -207,6 +207,7 @@ With our functions defined, we can then use the following flow to return the val
     
     return chrome.use { browser ->
         browser.target("about:blank").use { target ->
+            await { target.Page.enable() }
             await { navigateTo(url, target) }
             val authNode = await { getRootNode(target) }
     

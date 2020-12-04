@@ -171,6 +171,7 @@ private val chrome = Browser.builder()
 
 return chrome.use { browser -&gt;
     browser.target(&quot;about:blank&quot;).use { target -&gt;
+        await { target.Page.enable() }
         await { navigateTo(url, target) }
         val authNode = await { getRootNode(target) }
 

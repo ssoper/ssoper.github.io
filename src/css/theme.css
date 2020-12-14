@@ -192,3 +192,23 @@ body.corolla .btn-primary {
 body.corolla .btn-primary:hover {
   border-color: #8a9a65;
 }
+
+body.koh_phangan.jpg {
+  background-image: url(../images/koh_phangan.jpg)
+}
+
+body.koh_phangan.webp {
+  background-image: url(../images/koh_phangan.webp)
+}
+
+body.koh_phangan > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+body.koh_phangan .btn-primary {
+  border-color: #d0c697;
+}
+
+body.koh_phangan .btn-primary:hover {
+  border-color: #8a9a65;
+}

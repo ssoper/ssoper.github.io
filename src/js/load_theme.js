@@ -23,10 +23,12 @@
     'sunflower',
     'natural_bridge',
     'dulles',
-    'corolla'
+    'corolla',
+    'koh_phangan'
   ];
 
   // Don’t forget to add to theme.css
+  // Use the `cwebp` command to convert JPG to WebP
   let place = places[Math.floor(Math.random()*places.length)];
   document.body.classList.add(place);
 })(document);

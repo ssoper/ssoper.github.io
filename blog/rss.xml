@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eat. code. stonks.</title>
+    <link>https://seansoper.com/blog</link>
+    <description>Writing code for its own sake</description>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 5 Mar 2021 12:11:53 -0500</lastBuildDate>
+    <generator>zebec</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <atom:link href="https://seansoper.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Storing Secrets Securely in Kotlin</title>
+      <link>https://seansoper.com/blog/storing_secrets_securely_kotlin.html</link>
+      <description>Building a simple key store using standard Java cryptography libraries</description>
+      <pubDate>Sun, 21 Feb 2021 05:00:00 -0500</pubDate>
+      <guid>https://seansoper.com/blog/storing_secrets_securely_kotlin.html</guid>
+    </item>
+    <item>
+      <title>Using Retrofit to Integrate with an API</title>
+      <link>https://seansoper.com/blog/using_retrofit_integrate_api.html</link>
+      <description>Building out a full-featured client complete with tests</description>
+      <pubDate>Wed, 27 Jan 2021 14:16:05 -0500</pubDate>
+      <guid>https://seansoper.com/blog/using_retrofit_integrate_api.html</guid>
+    </item>
+    <item>
+      <title>Automating the Retrieval of a Verifier Code from E*TRADE</title>
+      <link>https://seansoper.com/blog/automating_retrieval_verifier_code_etrade.html</link>
+      <description>Navigating the web in Kotlin using Chrome</description>
+      <pubDate>Fri, 4 Dec 2020 23:16:04 -0500</pubDate>
+      <guid>https://seansoper.com/blog/automating_retrieval_verifier_code_etrade.html</guid>
+    </item>
+    <item>
+      <title>Making an Authorized Request to the E*TRADE API with OkHttp</title>
+      <link>https://seansoper.com/blog/make_authorized_request_etrade_api_okhttp.html</link>
+      <description>Create an OAuth v1 request using a custom interceptor</description>
+      <pubDate>Tue, 20 Oct 2020 19:20:50 -0400</pubDate>
+      <guid>https://seansoper.com/blog/make_authorized_request_etrade_api_okhttp.html</guid>
+    </item>
+    <item>
+      <title>Reading a YAML Configuration File in Kotlin</title>
+      <link>https://seansoper.com/blog/reading_yaml_configuration_file_kotlin.html</link>
+      <description>Adding a dependency on Jackson in your Gradle file</description>
+      <pubDate>Tue, 13 Oct 2020 00:24:56 -0400</pubDate>
+      <guid>https://seansoper.com/blog/reading_yaml_configuration_file_kotlin.html</guid>
+    </item>
+    <item>
+      <title>Reading from the Command-Line in Kotlin</title>
+      <link>https://seansoper.com/blog/reading_command_line.html</link>
+      <description>And how to make short work of complex problems using higher order functions, lambdas and generics</description>
+      <pubDate>Tue, 6 Oct 2020 12:58:27 -0400</pubDate>
+      <guid>https://seansoper.com/blog/reading_command_line.html</guid>
+    </item>
+    <item>
+      <title>Creating a Command-Line Application in Kotlin</title>
+      <link>https://seansoper.com/blog/creating_command_line_app_kotlin.html</link>
+      <description>From project creation to JAR file in three steps</description>
+      <pubDate>Sun, 27 Sep 2020 15:49:34 -0400</pubDate>
+      <guid>https://seansoper.com/blog/creating_command_line_app_kotlin.html</guid>
+    </item>
+    <item>
+      <title>Connecting to the E*TRADE API</title>
+      <link>https://seansoper.com/blog/connecting_etrade.html</link>
+      <description>How to interact with E*TRADE’s API via Postman</description>
+      <pubDate>Sat, 19 Sep 2020 16:00:00 -0400</pubDate>
+      <guid>https://seansoper.com/blog/connecting_etrade.html</guid>
+    </item>
+    <item>
+      <title>Start of a Journey</title>
+      <link>https://seansoper.com/blog/start_of_a_journey.html</link>
+      <description>Rediscovering what made me fall in love with programming originally</description>
+      <pubDate>Sat, 15 Feb 2020 16:11:00 -0500</pubDate>
+      <guid>https://seansoper.com/blog/start_of_a_journey.html</guid>
+    </item>
+  </channel>
+</rss>

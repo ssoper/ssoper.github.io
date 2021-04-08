@@ -91,6 +91,6 @@ html {
     script("/js/load_highlight.min.js")
     script("/js/load_search.min.js")
     comment("Google Analytics")
-    gaTag("UA-616637-1")
+    gaTag("G-N2516DN82V")
   }
 }

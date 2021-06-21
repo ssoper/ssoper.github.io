@@ -24,7 +24,8 @@
     'natural_bridge',
     'dulles',
     'corolla',
-    'koh_phangan'
+    'koh_phangan',
+    'cicada'
   ];
 
   // Don’t forget to add to theme.css

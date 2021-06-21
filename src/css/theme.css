@@ -212,3 +212,23 @@ body.koh_phangan .btn-primary {
 body.koh_phangan .btn-primary:hover {
   border-color: #8a9a65;
 }
+
+body.cicada.jpg {
+  background-image: url(../images/cicada.jpg)
+}
+
+body.cicada.webp {
+  background-image: url(../images/cicada.webp)
+}
+
+body.cicada .btn-primary {
+  border-color: #f7dc4b;
+}
+
+body.cicada .btn-primary:hover {
+  border-color: #8a9a65;
+}
+
+body.cicada > .site-wrapper {
+  background-color: rgba(0, 0, 0, 0.25);
+}

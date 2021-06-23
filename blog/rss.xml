@@ -5,10 +5,17 @@
     <link>https://seansoper.com/blog</link>
     <description>Writing code for its own sake</description>
     <language>en-US</language>
-    <lastBuildDate>Thu, 8 Apr 2021 10:41:27 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jun 2021 15:16:24 -0400</lastBuildDate>
     <generator>zebec</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <atom:link href="https://seansoper.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lane detection using Kotlin and OpenCV</title>
+      <link>https://seansoper.com/blog/lane_detection_opencv_kotlin.html</link>
+      <description>Using computer vision to detect highway markings in real-time</description>
+      <pubDate>Tue, 22 Jun 2021 18:59:24 -0400</pubDate>
+      <guid>https://seansoper.com/blog/lane_detection_opencv_kotlin.html</guid>
+    </item>
     <item>
       <title>Storing Secrets Securely in Kotlin</title>
       <link>https://seansoper.com/blog/storing_secrets_securely_kotlin.html</link>

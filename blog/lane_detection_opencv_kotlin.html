@@ -11,7 +11,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
     <meta name='ICBM' content='39.0840, 77.1528' />
-    <title>eat. code. stocks.</title>
+    <title>Lane detection using Kotlin and OpenCV by Sean Soper</title>
     <link type='image/x-icon' href='/favicon.ico' rel='shortcut icon' />
     <link type='application/rss+xml' title='eat. code. stocks.' href='/blog/rss.xml' rel='alternate' />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,7 +48,7 @@
   <img src='/images/avatar_normal.jpg' alt='' srcset='/images/avatar_normal.jpg 1x, /images/avatar_retina.jpg 2x'/>
   <ul>
     <li>Sean Soper</li>
-    <li>June 22, 2021</li>
+    <li>June 23, 2021</li>
   </ul>
 </div><img class='img-fluid rounded' alt='' src='//source.unsplash.com/sFk4YBGIwaQ/900x300' srcset='//source.unsplash.com/sFk4YBGIwaQ/900x300 1x, //source.unsplash.com/sFk4YBGIwaQ/1800x600 2x'><p>In terms of hard problems in computer science, computer vision <a href="https://medium.com/@CharlesOllion/whats-easy-hard-in-ai-computer-vision-these-days-e7679b9f7db7">ranks up there</a> as one of the toughest. Fortunately we have access to tools like <a href="https://opencv.org/">OpenCV</a> which comes pre-packaged with solutions for common problems like reading in a video feed or converting a color space. And thanks to native Java bindings, it is available for us to use in Kotlin.</p><h2>Problem Set</h2><p>Roughly speaking, we can break our problem down into the following steps.</p><ol><li>Read in each frame of a video as an image.</li><li>Use <a href="https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html">Canny Edge Detection</a> to retrieve a version of the image with only edges showing.</li><li>Mask the parts of the image that you need which in our case is directly front and center of the driver.</li><li>Use the <a href="https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html">Hough Line Transform</a> to detect straight lines of a minimum length.</li><li>With a polynomial curve fitter, average out the detected lines into one left and one right line.</li><li>Overlay those lines onto the original video.</li></ol><h2>Tools</h2><p>In addition to OpenCV, we’ll also need to bring in the math package from the Apache Commons library. Note that there are several Java-friendly versions of OpenCV floating around in the Maven repository. We opted for the one hosted by <a href="https://github.com/openpnp/opencv">OpenPnP</a>.</p><pre><code>
 dependencies {

@@ -5,7 +5,7 @@
     <link>https://seansoper.com/blog</link>
     <description>Writing code for its own sake</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 22 Jun 2021 15:16:24 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 11:33:04 -0400</lastBuildDate>
     <generator>zebec</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <atom:link href="https://seansoper.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
@@ -13,7 +13,7 @@
       <title>Lane detection using Kotlin and OpenCV</title>
       <link>https://seansoper.com/blog/lane_detection_opencv_kotlin.html</link>
       <description>Using computer vision to detect highway markings in real-time</description>
-      <pubDate>Tue, 22 Jun 2021 18:59:24 -0400</pubDate>
+      <pubDate>Wed, 23 Jun 2021 00:50:17 -0400</pubDate>
       <guid>https://seansoper.com/blog/lane_detection_opencv_kotlin.html</guid>
     </item>
     <item>
